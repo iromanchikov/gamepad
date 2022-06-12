@@ -1,0 +1,15 @@
+.gamepad {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gamepad_left {
+    display: flex;
+}
+
+.gamepad_right {
+    display: flex;
+    flex-direction: column;
+}

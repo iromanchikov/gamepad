@@ -1,0 +1,45 @@
+.view-switcher {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 0 20px;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+.view-switcher__logo {
+    width: 70px;
+    height: 70px;
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
+}
+
+.view-switcher__logo-wrap {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-switcher__logo-wrap:hover .view-switcher__logo {
+    transform: scale(1.15);
+}
+
+.view-switcher__item.active {
+    background-color: #fff;
+    color: #000;
+    cursor: default;
+}
+
+.view-switcher__item.active:hover {
+    transform: scale(1);
+}
+
+.view-switcher__items-wrap .btn:first-child {
+    margin-right: 16px;
+}

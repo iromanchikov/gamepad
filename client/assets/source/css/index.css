@@ -1,0 +1,56 @@
+@import 'blocks/_reset.css';
+@import 'blocks/_btns.css';
+@import 'blocks/_fields.css';
+@import 'blocks/_dom-view.css';
+@import 'blocks/_view-switcher.css';
+@import 'blocks/_gamepad.css';
+
+*,
+body {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(/assets/source/img/background6.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.green {
+    color: #8bc34a;
+}
+
+.blue {
+    color: #00bcd4;
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #333333;
+}
+
+.block.red {
+    background-color: #f44336;
+}
+
+.block.green {
+    background-color: #8bc34a;
+}
+
+.block.left {
+    left: 0;
+}
+
+.block.right {
+    right: 0;
+}
